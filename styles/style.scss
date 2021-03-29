@@ -1,0 +1,80 @@
+@import url("https://use.typekit.net/ckj3ken.css");
+
+// colors
+$black: hsl(0, 0%, 0%);
+$white: #fff;
+$text-color: hsl(0, 0%, 59%);
+$primary: hsl(268, 63%, 26%);
+$box-shadow: hsla(268, 62%, 26%, 0.07);
+$header-shadow: 0 4px 13px rgba(0,0,0,.05);
+$offwhite-line: hsla(240, 6%, 87%, 0.3);
+$call-to-action-background: #eff1ff;
+$banner-background: #dfe3ff;
+$main-button-background: #735694;
+
+// font-styles
+$text-font: muli, sans-serif;
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+}
+
+body{
+    font-family: $text-font;
+    height: 100%;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    position: fixed;
+    height: 70px;
+    top: 0;
+    left: 0;
+    box-shadow: $header-shadow;
+    background: $white; 
+
+    // padding-top: 15px;
+    // padding-bottom: 15px;
+
+    // text-align: center;
+}
+
+
+.nav-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1500px;
+    padding-right: 60px;
+    padding-left: 60px;
+}
+
+.nav-call-to-action {
+    display: flex;
+    // justify-content: space-between;
+}
+
+.mode-switch-img {
+    width: 1.2em;
+    display: inline-block;
+    cursor: pointer;
+    margin-right: 15px;
+}
+
+.nav-button {
+    text-decoration: none;
+    display: inline-block;
+    color: $primary;
+    font-weight: 700;
+    padding: 13px 20px;
+    background-color: $call-to-action-background;
+    border: 1.5px solid $primary;
+    border-radius: 5px;
+}
