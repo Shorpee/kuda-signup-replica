@@ -1,16 +1,16 @@
 @import url("https://use.typekit.net/ckj3ken.css");
 
 // colors
-$black: hsl(0, 0%, 0%);
-$white: #fff;
-$text-color: hsl(0, 0%, 59%);
-$primary: hsl(268, 63%, 26%);
-$box-shadow: hsla(268, 62%, 26%, 0.07);
+$black: rgb(0, 0, 0);
+$white: rgb(255, 255, 255);
+$text-color: rgb(150, 150, 150);
+$primary: rgb(64, 25, 107);
+$box-shadow: rgba(64, 25, 107, 0.07);
 $header-shadow: 0 4px 13px rgba(0,0,0,.05);
-$offwhite-line: hsla(240, 6%, 87%, 0.3);
-$call-to-action-background: #eff1ff;
-$banner-background: #dfe3ff;
-$main-button-background: #735694;
+$offwhite-line: rgba(220, 220, 224, 0.3);
+$call-to-action-background: rgb(239, 241, 255);
+$banner-background: rgb(223, 227, 255);
+$main-button-background: rgb(115, 86, 148);
 
 // font-styles
 $text-font: muli, sans-serif;
@@ -24,17 +24,16 @@ $text-font: muli, sans-serif;
 
 body{
     font-family: $text-font;
-    // height: 100%;
 }
 
 .navbar {
     display: flex;
     align-items: center;
     width: 100%;
-    position: fixed;
+    // position: fixed;
     height: 70px;
-    top: 0;
-    left: 0;
+    // top: 0;
+    // left: 0;
     box-shadow: $header-shadow;
     background: $white;
     z-index: 99;
@@ -78,17 +77,128 @@ body{
 .container {
     display: flex;
     height: 100%;
-    padding: 60px;
-    margin-top: 9%;
-    margin-left: auto;
-    // margin: 0 auto;
-    // padding-top: 12%;
+    // padding: 60px;
+    width: 100%;
+    // margin-top: 10%;
+    // margin-left: auto;
     overflow: hidden;
+    align-items: center;
+    justify-content: center;
 }
 
 .form-wrapper {
     display: flex;
-    max-width: 1240px;
-    margin: 0 auto;
     justify-content: space-evenly;
+    margin: 0 auto;    
+}
+
+.form-section {
+    width: 30%;
+}
+
+.box {
+    padding: 16px 20px;
+    border-radius: 5px;
+    box-shadow: 15px 30px 40px rgba(64,25,109,.07);
+    border: 1px solid rgba(219,220,224,.5);
+}
+
+.announcement-card {
+    background: $banner-background;
+    margin-bottom: 20px;
+
+    p {
+        font-weight: 700;
+        font-size: 0.9rem;
+        line-height: 1.5rem;
+        color: $primary;
+    }
+
+    a{
+        text-decoration: inherit;
+        color: inherit;
+        font-size: 0.9rem;
+    }
+}
+
+.form-card {
+    padding: 40px;
+}
+
+.form-call-to-action {
+    font-weight: 900;
+    color: $black;
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+}
+
+.form-instruction {
+    color: $text-color;
+    line-height: 1.2rem;
+    margin-bottom: 40px;
+    
+}
+
+.input-div {
+    margin-bottom: 15px;
+}
+
+.input-field input {
+    border: none;
+    padding-bottom: 12px;
+    font-weight: 700;
+}
+
+.input-field input::placeholder {
+    font-weight: 400;
+}
+
+input:focus, input:active {
+    outline: none;
+    border: none;
+}
+.input-field {
+    width: 100%;
+    align-content: center;
+    border-bottom: 1px solid $offwhite-line;
+    margin-bottom: 25px;
+}
+
+.input-field img {
+    float: right;
+}
+
+.input-title {
+    margin-bottom: 10px;
+}
+
+.reset-password {
+    font-weight: 600;
+    font-size: 0.8rem;
+    margin-bottom: 30px;
+
+    a {
+        text-decoration: none;
+        color: $primary;
+    }
+}
+
+.sign-in-btn {
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+    color: $white;
+    background: $main-button-background;
+    font-weight: 700;
+    padding: 13px 43px;
+    border-radius: 5px;
+}
+
+.illustration-container {
+    width: 55%;
+    object-fit: fill;
+
+    img {
+        width: 100%;
+    }
 }
