@@ -24,7 +24,7 @@ $text-font: muli, sans-serif;
 
 body{
     font-family: $text-font;
-    height: 100%;
+    // height: 100%;
 }
 
 .navbar {
@@ -36,12 +36,8 @@ body{
     top: 0;
     left: 0;
     box-shadow: $header-shadow;
-    background: $white; 
-
-    // padding-top: 15px;
-    // padding-bottom: 15px;
-
-    // text-align: center;
+    background: $white;
+    z-index: 99;
 }
 
 
@@ -54,11 +50,11 @@ body{
     max-width: 1500px;
     padding-right: 60px;
     padding-left: 60px;
+    white-space: nowrap;
 }
 
 .nav-call-to-action {
     display: flex;
-    // justify-content: space-between;
 }
 
 .mode-switch-img {
@@ -77,4 +73,22 @@ body{
     background-color: $call-to-action-background;
     border: 1.5px solid $primary;
     border-radius: 5px;
+}
+
+.container {
+    display: flex;
+    height: 100%;
+    padding: 60px;
+    margin-top: 9%;
+    margin-left: auto;
+    // margin: 0 auto;
+    // padding-top: 12%;
+    overflow: hidden;
+}
+
+.form-wrapper {
+    display: flex;
+    max-width: 1240px;
+    margin: 0 auto;
+    justify-content: space-evenly;
 }
