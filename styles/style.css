@@ -72,8 +72,8 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 100%;
-  width: 100%;
+  height: calc(100vh - 70px);
+  width: 80%;
   overflow: hidden;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -81,6 +81,9 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  margin: 0 auto;
 }
 
 .form-wrapper {
@@ -90,11 +93,12 @@ body {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  margin: 0 auto;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
 }
 
 .form-section {
-  width: 30%;
+  width: 29%;
 }
 
 .box {
@@ -138,6 +142,7 @@ body {
   color: #969696;
   line-height: 1.2rem;
   margin-bottom: 40px;
+  font-size: 0.9rem;
 }
 
 .input-div {
@@ -210,7 +215,7 @@ input:focus, input:active {
 }
 
 .illustration-container {
-  width: 55%;
+  width: 56%;
   -o-object-fit: fill;
      object-fit: fill;
 }
