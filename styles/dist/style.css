@@ -144,11 +144,19 @@ input:focus, input:active {
   position: relative;
 }
 
-.input-field img {
+.input-field .feather {
   position: absolute;
   top: 5px;
   right: 5px;
   height: 1.2rem;
+}
+
+.hide {
+  display: none;
+}
+
+.show {
+  display: block;
 }
 
 .input-field input {

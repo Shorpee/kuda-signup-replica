@@ -170,16 +170,24 @@ input:focus, input:active {
     position: relative;
 }
 
-.input-field img {
+.input-field .feather {
     position: absolute;
-    // margin-left: -30px;
-    // margin-bottom: -60px;
-    // top: -3;
     top: 5px;
     right: 5px;
     height: 1.2rem;
-    // float: right;
 }
+
+.hide {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+// .feather {
+//     stroke: red;
+// }
 
 .input-field input{
     width: 100%;
