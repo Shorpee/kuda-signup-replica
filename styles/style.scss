@@ -177,9 +177,13 @@ input:focus, input:active {
     height: 1.2rem;
 }
 
-// .feather-eye {
-//     display: none;
-// }
+.hide {
+    display: none;
+}
+
+.show {
+    display: block;
+}
 
 
 // .feather {
